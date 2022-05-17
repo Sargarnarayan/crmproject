@@ -1,0 +1,71 @@
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Quick Update</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form [formGroup]="myForm1" (ngSubmit)="onSubmitForm()">
+            <div class="form-groop">
+                <label for="">Employee name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-groop">
+                <label for="">Employee Age</label>
+                <input type="text" class="form-control" formControlName="age">
+            </div>
+            <div class="form-groop">
+                <label for="">Employee ID</label>
+                <input type="text" class="form-control" formControlName="empId">
+            </div>
+            <div class="form-groop">
+                <label for="">Branch</label>
+                <input type="text" class="form-control" formControlName="branch">
+            </div>
+            <div class="form-groop">
+                <label for="">Role</label>
+                <input type="text" class="form-control" formControlName="role">
+            </div>                          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" (click)="onSubmitForm()"  class="btn btn-info bg-success text-white">update</button>
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+<div class="container">
+    <form [formGroup]="myForm1" (ngSubmit)="onSubmitForm()" >         
+    <mat-dialog-content class="bg-light text-dark">
+        <div class="container py-5">
+            <div class="form-groop">
+                <label for="">Employee name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-groop">
+                <label for="">Employee Age</label>
+                <input type="text" class="form-control" formControlName="age">
+            </div>
+            <div class="form-groop">
+                <label for="">Employee ID</label>
+                <input type="text" class="form-control" formControlName="empId">
+            </div>
+            <div class="form-groop">
+                <label for="">Branch</label>
+                <input type="text" class="form-control" formControlName="branch">
+            </div>
+            <div class="form-groop">
+                <label for="">Role</label>
+                <input type="text" class="form-control" formControlName="role">
+            </div>
+            <div class="mat-dilog-action py-3">
+                <button  class="btn btn-info bg-danger text-white " mat-button mat-dialog-close>Close</button>
+                <button type="button" (click)="onSubmitForm()"  class="btn btn-info bg-success text-white px-2">Update</button>
+            </div>      
+        </div>  
+    </mat-dialog-content>        
+    </form>
+</div>

@@ -1,0 +1,13 @@
+.icon{
+    color: rgb(243, 149, 26); /* all icon color */
+}
+
+/* plus or add data button */
+.icon-btn{
+    color: orange;
+    float: right;
+    margin-top: 410px;
+    margin-right: 5px;
+}
+
+

@@ -1,0 +1,19 @@
+ /* active button color  navbar and sidebar*/
+ .Active{
+  background-color: rgb(236, 133, 35); 
+ }  
+ /* horizontal navigation  bottom line */
+.nav{
+  border-bottom: solid rgb(245, 160, 81) 2px; 
+}
+.mat-sidenav-container{ 
+  background-color: white;
+  width: auto;
+  height: 660px;
+  margin: 0px;
+}
+/* vartical sidenav bg color */
+.mat-sidenav{
+  background-color: whitesmoke; 
+}
+
