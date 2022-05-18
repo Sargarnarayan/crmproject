@@ -29,7 +29,7 @@ export class AllComponent implements OnInit {
   empData: any[] = [];
   centers = ['Pune', 'Banglore', 'Mumbai'];
   courses = ['BCA', 'MCA', 'BSC', 'MSC'];
-  enqirySorce = ['Googleads'];
+  enqirysorce = ['Googleads'];
   window: any;
 
 
