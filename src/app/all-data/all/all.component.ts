@@ -33,13 +33,13 @@ export class AllComponent implements OnInit {
   window: any;
 
 
-  constructor(private ser: DataService, private form: FormBuilder, private route: Router, public dialog: MatDialog) { }
+  constructor(private DataServices: DataService, private form: FormBuilder, private route: Router, public dialog: MatDialog) { }
   ngOnInit(): void {
     this.alldata = this.form.group({
       fname: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
       lname: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
-      Email: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}")]],
-      EnqiryType: ['', [Validators.required, Validators.pattern("")]],
+      email: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}")]],
+      enqiryType: ['', [Validators.required, Validators.pattern("")]],
       center: ['', [Validators.required, Validators.pattern('[a-zA-Z][a-zA-Z]+')]],
       mobile: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
       enqirySorce: ['', [Validators.required]],
@@ -47,7 +47,7 @@ export class AllComponent implements OnInit {
       remark: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]]
     });
 
-    this.ser.getData().subscribe((res: any) => {
+    this.DataServices.getData().subscribe((res: any) => {
       console.log(res);
       this.empData = res;
     });
@@ -94,7 +94,7 @@ export class AllComponent implements OnInit {
     }
   }
 
-  get frm() {
+  get formControl() {
     return this.alldata.controls;
   }
 }
