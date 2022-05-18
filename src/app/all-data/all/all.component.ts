@@ -39,10 +39,10 @@ export class AllComponent implements OnInit {
       fname: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
       lname: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
       email: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}")]],
-      enqiryType: ['', [Validators.required, Validators.pattern("")]],
+      enqirytype: ['', [Validators.required, Validators.pattern("")]],
       center: ['', [Validators.required, Validators.pattern('[a-zA-Z][a-zA-Z]+')]],
       mobile: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
-      enqirySorce: ['', [Validators.required]],
+      enqirysorce: ['', [Validators.required]],
       corse: ['', [Validators.required]],
       remark: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]]
     });
@@ -94,7 +94,7 @@ export class AllComponent implements OnInit {
     }
   }
 
-  get formControl() {
+  get FormControl() {
     return this.alldata.controls;
   }
 }
